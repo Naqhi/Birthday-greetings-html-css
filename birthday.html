@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        body {
+            margin: 20px;
+            background-image: url(bg.webp);
+            text-align: left;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .baloon {
+            display: inline-block;
+            width: 150px;
+            height: 160px;
+            border-radius: 80%;
+            position: relative;
+            box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);
+            transition: transform 0.5s ease;
+            z-index: 10;
+            top: 20px;
+            transform-origin: bottom center;
+
+        }
+
+        .baloon1 {
+            animation: baloons1 0.5s forwards;
+            font-size: 90px;
+            text-align: center;
+            bottom: -10px;
+        }
+
+        .baloon2 {
+            animation: baloons2 .5s forwards;
+            font-size: 80px;
+            top: -150;
+            bottom: -10px;
+            text-align: center;
+        }
+
+        .baloon3 {
+            animation: baloons3 forwards;
+            font-size: 80px;
+            bottom: -10px;
+            text-align: center;
+        }
+
+        @keyframes baloons1 {
+            0% {
+                transform: translateY(100vh);
+                opacity: 1;
+            }
+
+            10% {
+                transform: translateY(70vh) ;
+                opacity: 1;
+            }
+            30% {
+                transform: translateY(80vh);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(50vh) ;
+                opacity: 1;
+            }
+            70% {
+                transform: translateY(60vh) ;
+                opacity: 1;
+            }
+            85% {
+                transform: translateY(25vh) ;
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(0vh) ;
+                opacity: 1;
+            }
+
+        }
+
+        @keyframes baloons2 {
+            0% {
+                transform: translateY(50vh);
+                opacity: 1;
+            }
+
+            10% {
+                transform: translateY(90vh) ;
+                opacity: 1;
+            }
+            30% {
+                transform: translateY(80vh);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(70vh) ;
+                opacity: 1;
+            }
+            70% {
+                transform: translateY(80vh) ;
+                opacity: 1;
+            }
+            85% {
+                transform: translateY(45vh) ;
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(0vh) ;
+                opacity: 1;
+            }
+
+        }
+
+        @keyframes baloons3 {
+            0% {
+                transform: translateY(10vh);
+                opacity: 1;
+            }
+
+            10% {
+                transform: translateY(50vh) ;
+                opacity: 1;
+            }
+            30% {
+                transform: translateY(60vh);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(30vh) ;
+                opacity: 1;
+            }
+            70% {
+                transform: translateY(40vh) ;
+                opacity: 1;
+            }
+            85% {
+                transform: translateY(5vh) ;
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(0vh) ;
+                opacity: 1;
+            }
+
+        }
+
+        .container .baloon1:hover {
+
+            background-color: rgb(136, 255, 255);
+        
+        }
+
+      .container .baloon2:hover {
+
+            background-color: rgb(95, 255, 196);
+        }
+
+        .container .baloon3:hover {
+
+            background-color: rgb(214, 255, 100);
+        }
+
+        .baloon1:nth-child(1) {
+            background: rgba(255, 250, 100);
+            animation-duration: 3.0s;
+            left: 21px;
+        }
+
+        .baloon1:nth-child(1):before {
+            color: rgba(255, 255, 255);
+        }
+
+        .baloon1:nth-child(2) {
+            background: rgb(27, 185, 72);
+            animation-duration: 3.0s;
+            left: 31px;
+        }
+
+        .baloon1:nth-child(2):before {
+            color: rgb(255, 255, 255);
+        }
+
+        .baloon1:nth-child(3) {
+            background: rgb(77, 171, 205);
+            animation-duration: 3.0s;
+            left: 41px;
+        }
+
+        .baloon1:nth-child(3):before {
+            color: rgba(255, 255, 255);
+        }
+
+        .baloon1:nth-child(4) {
+            background: rgb(221, 0, 255);
+            animation-duration: 3.0s;
+            left: 51px;
+        }
+
+        .baloon1:nth-child(4):before {
+            color: rgb(255, 255, 255);
+        }
+
+        .baloon1:nth-child(5) {
+            background: rgb(100, 190, 255);
+            animation-duration: 3.0s;
+            left: 61px;
+        }
+
+        .baloon1:nth-child(5):before {
+            color: rgba(255, 255, 255);
+        }
+
+        .baloon2:nth-child(1) {
+            background: rgb(1, 255, 157);
+            animation-duration: 3.0s;
+            left: 21px;
+        }
+
+        .baloon2:nth-child(1):before {
+            color: rgba(255, 255, 255);
+        }
+
+        .baloon2:nth-child(2) {
+            background: rgb(255, 195, 146);
+            animation-duration: 3.0s;
+            left: 31px;
+        }
+
+        .baloon2:nth-child(2):before {
+            color: rgb(255, 255, 255);
+        }
+
+        .baloon2:nth-child(3) {
+            background: rgb(187, 148, 235);
+            animation-duration: 3.0s;
+            left: 41px;
+        }
+
+        .baloon2:nth-child(3):before {
+            color: rgba(255, 255, 255);
+        }
+
+        .baloon2:nth-child(4) {
+            background: rgb(191, 245, 73);
+            animation-duration: 3.0s;
+            left: 51px;
+        }
+
+        .baloon2:nth-child(4):before {
+            color: rgb(255, 255, 255);
+        }
+
+        .baloon2:nth-child(5) {
+            background: rgb(235, 163, 214);
+            animation-duration: 3.0s;
+            left: 61px;
+        }
+
+        .baloon2:nth-child(5):before {
+            color: rgba(255, 255, 255);
+        }
+
+        .baloon3:nth-child(1) {
+            background: rgb(255, 0, 85);
+            animation-duration: 3.0s;
+            left: 21px;
+        }
+
+        .baloon3:nth-child(1):before {
+            color: rgba(255, 255, 255);
+        }
+
+        .baloon3:nth-child(2) {
+            background: rgb(41, 255, 234);
+            animation-duration: 3.0s;
+            left: 31px;
+        }
+
+        .baloon3:nth-child(2):before {
+            color: rgb(255, 255, 255);
+        }
+
+        .baloon3:nth-child(3) {
+            background: rgb(0, 248, 83);
+            animation-duration: 3.0s;
+            left: 41px;
+        }
+
+        .baloon3:nth-child(3):before {
+            color: rgba(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="baloon baloon1">H</div>
+        <div class="baloon baloon1">A</div>
+        <div class="baloon baloon1">P</div>
+        <div class="baloon baloon1">P</div>
+        <div class="baloon baloon1">Y</div>
+    </div>
+    <div class="container">
+        <div class="baloon baloon2">B</div>
+        <div class="baloon baloon2">I</div>
+        <div class="baloon baloon2">R</div>
+        <div class="baloon baloon2">T</div>
+        <div class="baloon baloon2">H</div>
+    </div>
+    <div class="container">
+        <div class="baloon baloon3">D</div>
+        <div class="baloon baloon3">A</div>
+        <div class="baloon baloon3">Y</div>
+    </div>
+</body>
+<script>
+    let a=typeof("hello");
+console.log(a);
+</script>
+
+</html>
